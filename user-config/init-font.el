@@ -1,6 +1,10 @@
-;; ------ 设置字体 ------
+;;; package --- Summary
+;;; Commentary:
 
-;; ------ 修改字体 ------
+
+;;; Code:
+
+;; ------ 设置字体 ------
 
 ;; (set-frame-font "Open Sans-11" t t)
 ;; (set-frame-font "Monaco-11" t t)
@@ -24,3 +28,5 @@
 
 
 (provide 'init-font)
+
+;;; init-font.el ends here

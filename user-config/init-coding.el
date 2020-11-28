@@ -1,3 +1,9 @@
+;;; package --- Summary
+;;; Commentary:
+
+
+;;; Code:
+
 ;; ------ 设置编码 UTF-8 ------
 
 (prefer-coding-system 'utf-8)
@@ -22,3 +28,5 @@
 
 
 (provide 'init-coding)
+
+;;; init-coding.el ends here

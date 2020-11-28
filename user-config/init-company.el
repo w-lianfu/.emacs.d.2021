@@ -1,3 +1,9 @@
+;;; package --- Summary
+;;; Commentary:
+
+
+;;; Code:
+
 ;; ------ 代码补全 company, auto-complete ------
 
 ;; ------ auto-complete 模式 ------
@@ -27,3 +33,5 @@
 
 
 (provide 'init-company)
+
+;;; init-company.el ends here

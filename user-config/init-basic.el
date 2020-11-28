@@ -1,15 +1,19 @@
+;;; package --- Summary
+;;; Commentary:
+
 ;; ------ 基本配置 ------
 
-;; ------ 设置默认屏幕宽高 ------
+;;; Code:
 
-(add-to-list 'default-frame-alist '(height . 46))
-(add-to-list 'default-frame-alist '(width . 120))
+;; ------ 设置默认屏幕宽高 ------
+(add-to-list 'default-frame-alist '(height . 60))
+(add-to-list 'default-frame-alist '(width . 136))
 (add-to-list 'default-frame-alist '(left . 120))
 (add-to-list 'default-frame-alist '(top . 30))
 
 
 ;; 显示行号
-(global-linum-mode t)
+;; (global-linum-mode t)
 ;; 高亮当前行
 (global-hl-line-mode t)
 ;; 关闭工具栏
@@ -48,7 +52,7 @@
 ;; 显示时间
 (display-time-mode 1)
 (setq display-time-24hr-format t)
-(setq display-time-day-and-date t)
+;; (setq display-time-day-and-date t)
 ;; 自动将光标移动到新创建的窗口中
 (require 'popwin)
 (popwin-mode 1)
@@ -69,3 +73,5 @@
 
 
 (provide 'init-basic)
+
+;;; init-basic ends here

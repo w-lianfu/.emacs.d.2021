@@ -1,3 +1,9 @@
+;;; package --- Summary
+;;; Commentary:
+
+
+;;; Code:
+
 ;; ------ 设置主题 ------
 
 ;; (load-theme 'dracula t)
@@ -8,3 +14,5 @@
 ;; (load-theme 'moe t)
 
 (provide 'init-theme)
+
+;;; init-theme.el ends here

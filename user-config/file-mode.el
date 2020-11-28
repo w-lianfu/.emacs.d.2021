@@ -1,5 +1,12 @@
+;;; package --- Summary
+;;; Commentary:
+
+
+;;; Code:
+
 ;; ------ 设置文件模式 ------
 
+(use-package web-mode)
 (use-package css-mode)
 (use-package sass-mode)
 (use-package scss-mode)
@@ -7,7 +14,6 @@
 
 (use-package js2-mode)
 (use-package typescript-mode)
-(use-package web-mode)
 (use-package rjsx-mode)
 (use-package json-mode)
 
@@ -43,3 +49,5 @@
 (add-to-list 'auto-mode-alist '("\\[._]?g?vimrc\\'" . vimrc-mode))
 
 (provide 'file-mode)
+
+;;; file-mode.el ends here

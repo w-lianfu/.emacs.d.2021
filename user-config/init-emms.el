@@ -1,3 +1,9 @@
+;;; package --- Summary
+;;; Commentary:
+
+
+;;; Code:
+
 ;; ------ init-emms ------
 
 (add-to-list 'load-path "~/.emacs.d/emms/lisp")
@@ -18,3 +24,5 @@
 
 
 (provide 'init-emms)
+
+;;; init-emms.el ends here

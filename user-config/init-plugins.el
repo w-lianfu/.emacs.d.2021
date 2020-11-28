@@ -1,3 +1,9 @@
+;;; package --- Summary
+;;; Commentary:
+
+
+;;; Code:
+
 ;; ------ init-plugins ------
 
 (use-package yasnippet)
@@ -14,3 +20,5 @@
 
 
 (provide 'init-plugins)
+
+;;; init-plugins.el ends here
