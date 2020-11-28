@@ -35,7 +35,9 @@
 ;; 设置光标样式
 (setq-default cursor-type 'box)
 ;; (setq evil-hybrid-state-cursor '("yellow" box))
-(set-cursor-color "#d500f9")
+;;(set-cursor-color "#d500f9")
+(add-to-list 'default-frame-alist
+			'(cursor-color . "#d500f9"))
 ;; 禁止光标闪烁
 (blink-cursor-mode 0)
 ;; 编辑时禁用触摸板与鼠标
