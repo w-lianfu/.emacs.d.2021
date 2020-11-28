@@ -13,7 +13,8 @@
 
 
 ;; 显示行号
-;; (global-linum-mode t)
+;; --- Warn: 占用 CPU 资源较多
+(global-linum-mode t)
 ;; 高亮当前行
 (global-hl-line-mode t)
 ;; 关闭工具栏

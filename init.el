@@ -75,6 +75,9 @@
 ;; ------ 新的探索 ------
 (require 'init-explore)
 
+;; ------ 开启 evil 模式 + 设置鼠标样式 ------
+(require 'init-evil)
+
 ;; ------ 开启插件 ------
 (require 'init-plugins)
 
@@ -98,6 +101,9 @@
 
 ;; ------ emms ------
 (require 'init-emms)
+
+;; ------ init git ------
+(require 'init-git)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -158,7 +164,7 @@
 	 '("#ffb4ac" "#ddaa6f" "#e5c06d" "#39454b" "#dce9f1" "#3e3e45" "#7ec98f" "#e5786d" "#834c98"))
  '(objed-cursor-color "#CC6666")
  '(package-selected-packages
-	 '(avy flycheck swiper cyberpunk-2019-theme cyberpunk-theme moe-theme afternoon-theme gruvbox-theme vimrc-mode go-mode json-mode rust-mode markdown-mode typescript-mode sass-mode scss-mode ample-theme helm-themes ace-jump-mode vlc emms ag iedit mew w3m peacock-theme doom-themes emmet-mode treemacs-icons-dired treemacs-projectile treemacs-evil autopair dashboard soft-stone-theme material-theme birds-of-paradise-plus-theme ubuntu-theme zenburn-theme solarized-theme spacemacs-theme counsel rjsx-mode js2-mode auto-complete helm-projectile tide popwin company web-mode yasnippet magit ivy treemacs neotree evil monokai-theme dracula-theme helm disable-mouse))
+	 '(git-gutter-fringe git-gutter avy flycheck swiper cyberpunk-2019-theme cyberpunk-theme moe-theme afternoon-theme gruvbox-theme vimrc-mode go-mode json-mode rust-mode markdown-mode typescript-mode sass-mode scss-mode ample-theme helm-themes ace-jump-mode vlc emms ag iedit mew w3m peacock-theme doom-themes emmet-mode treemacs-icons-dired treemacs-projectile treemacs-evil autopair dashboard soft-stone-theme material-theme birds-of-paradise-plus-theme ubuntu-theme zenburn-theme solarized-theme spacemacs-theme counsel rjsx-mode js2-mode auto-complete helm-projectile tide popwin company web-mode yasnippet magit ivy treemacs neotree evil monokai-theme dracula-theme helm disable-mouse))
  '(pdf-view-midnight-colors '("#b2b2b2" . "#292b2e"))
  '(pos-tip-background-color "#2a2a2a")
  '(pos-tip-foreground-color "#939393")
