@@ -33,20 +33,6 @@
 ;; (setq inhibit-startup-message t)
 (setq-default show-trailing-whitespace t)
 
-;; 设置光标样式
-(setq-default cursor-type 'box)
-;; (setq evil-hybrid-state-cursor '("yellow" box))
-(set-cursor-color "purple")
-;;(add-to-list 'default-frame-alist
-;;			'(cursor-color . "#d500f9"))
-(setq initial-frame-alist
-			'((cursor-color . "#d500f9")))
-;; 禁止光标闪烁
-(blink-cursor-mode 0)
-;; 编辑时禁用触摸板与鼠标
-;; 需要安装plugin: disable-mouse
-(global-disable-mouse-mode t)
-
 ;; 关闭自动生产备份文件
 (setq make-backup-files nil)
 ;; 关闭自动保存文件

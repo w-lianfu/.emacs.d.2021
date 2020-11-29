@@ -36,6 +36,9 @@
 ;; ------ 设置默认屏幕宽高 ------
 (require 'init-size)
 
+;; ------ 设置鼠标样式 ------
+(require 'init-cursor)
+
 ;; ------ 基本配置 ------
 (require 'init-basic)
 
