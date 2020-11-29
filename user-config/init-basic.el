@@ -5,18 +5,18 @@
 
 ;;; Code:
 
-;; ------ 设置默认屏幕宽高 ------
-(add-to-list 'default-frame-alist '(height . 60))
-(add-to-list 'default-frame-alist '(width . 136))
-(add-to-list 'default-frame-alist '(left . 120))
-(add-to-list 'default-frame-alist '(top . 30))
-
 
 ;; 显示行号
 ;; --- Warn: 占用 CPU 资源较多
-(global-linum-mode t)
+;; (global-linum-mode t)
+(global-display-line-numbers-mode t)
+;; (add-hook 'prog-mode-hook 'linum-mode)
 ;; 高亮当前行
 (global-hl-line-mode t)
+;; 高亮当前行背景色
+(set-face-background 'hl-line "#094771")
+;; 高亮当前行时保留语法高亮
+(set-face-background 'highlight nil)
 ;; 关闭工具栏
 (tool-bar-mode -1)
 ;; 关闭滚动轴
@@ -32,17 +32,21 @@
 ;; 关闭起动时闪屏
 ;; (setq inhibit-startup-message t)
 (setq-default show-trailing-whitespace t)
+
 ;; 设置光标样式
 (setq-default cursor-type 'box)
 ;; (setq evil-hybrid-state-cursor '("yellow" box))
-;;(set-cursor-color "#d500f9")
-(add-to-list 'default-frame-alist
-			'(cursor-color . "#d500f9"))
+(set-cursor-color "purple")
+;;(add-to-list 'default-frame-alist
+;;			'(cursor-color . "#d500f9"))
+(setq initial-frame-alist
+			'((cursor-color . "#d500f9")))
 ;; 禁止光标闪烁
 (blink-cursor-mode 0)
 ;; 编辑时禁用触摸板与鼠标
 ;; 需要安装plugin: disable-mouse
 (global-disable-mouse-mode t)
+
 ;; 关闭自动生产备份文件
 (setq make-backup-files nil)
 ;; 关闭自动保存文件
@@ -52,6 +56,8 @@
 (setq create-lockfiles nil)
 ;; 设置编码
 (set-language-environment "UTF-8")
+;; 括号匹配高亮
+(show-paren-mode 1)
 ;; 显示时间
 (display-time-mode 1)
 (setq display-time-24hr-format t)

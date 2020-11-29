@@ -32,8 +32,10 @@
 	(setq ivy-use-virtual-buffers t)
 	(setq enable-recursive-minibuffers t)
 	(setq search-default-mode #'char-fold-to-regexp)
-	(setq ivy-count-format "(%d/%d) ")
-	(setq projectile-completion-system 'ivy))
+	(setq ivy-count-format "")
+	(setq ivy-virtual-abbreviate 'fullpath)
+	(setq projectile-completion-system 'ivy)
+	(setq ivy-use-selectable-prompt t))
 
 
 ;; ------ 旧的配置备份 ------

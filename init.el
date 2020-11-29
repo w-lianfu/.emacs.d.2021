@@ -24,32 +24,17 @@
 (package-initialize)
 (package-refresh-contents)
 
+
 (require 'use-package)
+
 (add-to-list 'load-path "~/.emacs.d/user-config/")
 
 
-(setq gc-cons-threshold 100000000)
-
-;;(defun my-minibuffer-setup-hook ()
-;;(setq gc-cons-threshold most-positive-fixnum))
-
-;;(defun my-minibuffer-exit-hook ()
-;;(setq gc-cons-threshold 800000))
-
-;;(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
-;;(add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
-
-;;(setq gc-cons-thresold 20000000)
-
-;;(setq gc-cons-threshold (eval-when-compile (* 1024 1024 1024)))
-;;(run-with-idle-timer 2 t (lambda () (garbage-collect)))
-
-;;(setq file-name-handler-alist-original file-name-handler-alist)
-;;(setq file-name-handler-alist nil)
-
-
 ;; ------ 解决 Emacs GC 占用内存高的问题 ------
-;; (require 'init-gc)
+(require 'init-gc)
+
+;; ------ 设置默认屏幕宽高 ------
+(require 'init-size)
 
 ;; ------ 基本配置 ------
 (require 'init-basic)
@@ -164,7 +149,7 @@
 	 '("#ffb4ac" "#ddaa6f" "#e5c06d" "#39454b" "#dce9f1" "#3e3e45" "#7ec98f" "#e5786d" "#834c98"))
  '(objed-cursor-color "#CC6666")
  '(package-selected-packages
-	 '(git-gutter-fringe git-gutter avy flycheck swiper cyberpunk-2019-theme cyberpunk-theme moe-theme afternoon-theme gruvbox-theme vimrc-mode go-mode json-mode rust-mode markdown-mode typescript-mode sass-mode scss-mode ample-theme helm-themes ace-jump-mode vlc emms ag iedit mew w3m peacock-theme doom-themes emmet-mode treemacs-icons-dired treemacs-projectile treemacs-evil autopair dashboard soft-stone-theme material-theme birds-of-paradise-plus-theme ubuntu-theme zenburn-theme solarized-theme spacemacs-theme counsel rjsx-mode js2-mode auto-complete helm-projectile tide popwin company web-mode yasnippet magit ivy treemacs neotree evil monokai-theme dracula-theme helm disable-mouse))
+	 '(nlinum-relative nlinum git-gutter-fringe git-gutter avy flycheck swiper cyberpunk-2019-theme cyberpunk-theme moe-theme afternoon-theme gruvbox-theme vimrc-mode go-mode json-mode rust-mode markdown-mode typescript-mode sass-mode scss-mode ample-theme helm-themes ace-jump-mode vlc emms ag iedit mew w3m peacock-theme doom-themes emmet-mode treemacs-icons-dired treemacs-projectile treemacs-evil autopair dashboard soft-stone-theme material-theme birds-of-paradise-plus-theme ubuntu-theme zenburn-theme solarized-theme spacemacs-theme counsel rjsx-mode js2-mode auto-complete helm-projectile tide popwin company web-mode yasnippet magit ivy treemacs neotree evil monokai-theme dracula-theme helm disable-mouse))
  '(pdf-view-midnight-colors '("#b2b2b2" . "#292b2e"))
  '(pos-tip-background-color "#2a2a2a")
  '(pos-tip-foreground-color "#939393")
