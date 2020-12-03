@@ -39,6 +39,9 @@
 ;; ------ 设置鼠标样式 ------
 (require 'init-cursor)
 
+;; ------ Dashboard ------
+(require 'init-dashboard)
+
 ;; ------ 基本配置 ------
 (require 'init-basic)
 
