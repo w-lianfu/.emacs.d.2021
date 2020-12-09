@@ -22,7 +22,8 @@
   js-indent-offset 2
   jsx-indent-offset 2
   typescript-indent-offset 2
-  javascript-indent-offset 2)
+  javascript-indent-offset 2
+	rust-indent-offset 2)
 
 
 ;; ------ 旧的尝试-备份 ------

@@ -27,11 +27,10 @@
 ;; Configuration
 ;; (setq dashboard-center-content t)
 
+;; agenda / registers
 (setq dashboard-items '((recents . 6)
 												(bookmarks . 5)
-												(projects . 5)
-												(agenda . 5)
-												(registers . 5)))
+												(projects . 5)))
 
 
 (provide 'init-dashboard)

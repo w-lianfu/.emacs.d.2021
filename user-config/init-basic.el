@@ -46,7 +46,8 @@
 (show-paren-mode 1)
 ;; 显示时间
 (display-time-mode 1)
-(setq display-time-24hr-format t)
+(setq display-time-format "%H:%M")
+;; (setq display-time-24hr-format t)
 ;; (setq display-time-day-and-date t)
 ;; 自动将光标移动到新创建的窗口中
 (require 'popwin)
