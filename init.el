@@ -5,17 +5,19 @@
 ;;(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 ;;			 ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 ;; 腾讯源
-(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
-                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
+;;(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
+;;                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
 ;; 网易源
 ;; 清华源
-;;(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-;;                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 (package-initialize)
 (package-refresh-contents)
 
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/user-config/")
+
+(setq byte-compile-warnings '(cl-functions))
 
 ;; ------ 基本配置 ------
 (require 'init-basic)
