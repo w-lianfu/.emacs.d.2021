@@ -17,9 +17,11 @@
 ;; ------ 设置中文字体 ------
 
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font)
-    charset
-      (font-spec :family "PingFang SC" :size 15)))
+  (if (display-graphic-p)
+    (progn
+      (set-fontset-font (frame-parameter nil 'font)
+        charset
+        (font-spec :family "PingFang SC" :size 15)))))
 
 
 ;; ------ Windows 中文字体兼容 ------

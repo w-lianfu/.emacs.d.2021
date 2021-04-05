@@ -13,12 +13,12 @@
 ;;			 ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 ;; ------ 腾讯源 ------
-(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
-                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
+;;(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
+;;                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
 
 ;; ------ 清华源 ------
-;;(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-;;                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                         ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 
 (package-initialize)
@@ -29,6 +29,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/user-config/")
 
+(setq byte-compile-warnings '(cl-functions))
 
 ;; ------ 解决 Emacs GC 占用内存高的问题 ------
 (require 'init-gc)
@@ -155,7 +156,7 @@
 	 '("#ffb4ac" "#ddaa6f" "#e5c06d" "#39454b" "#dce9f1" "#3e3e45" "#7ec98f" "#e5786d" "#834c98"))
  '(objed-cursor-color "#CC6666")
  '(package-selected-packages
-	 '(nlinum-relative nlinum git-gutter-fringe git-gutter avy flycheck swiper cyberpunk-2019-theme cyberpunk-theme moe-theme afternoon-theme gruvbox-theme vimrc-mode go-mode json-mode rust-mode markdown-mode typescript-mode sass-mode scss-mode ample-theme helm-themes ace-jump-mode vlc emms ag iedit mew w3m peacock-theme doom-themes emmet-mode treemacs-icons-dired treemacs-projectile treemacs-evil autopair dashboard soft-stone-theme material-theme birds-of-paradise-plus-theme ubuntu-theme zenburn-theme solarized-theme spacemacs-theme counsel rjsx-mode js2-mode auto-complete helm-projectile tide popwin company web-mode yasnippet magit ivy treemacs neotree evil monokai-theme dracula-theme helm disable-mouse))
+	 '(flymake-eslint panda-theme vscdark-theme nlinum-relative nlinum git-gutter-fringe git-gutter avy flycheck swiper cyberpunk-2019-theme cyberpunk-theme moe-theme afternoon-theme gruvbox-theme vimrc-mode go-mode json-mode rust-mode markdown-mode typescript-mode sass-mode scss-mode ample-theme helm-themes ace-jump-mode vlc emms ag iedit mew w3m peacock-theme doom-themes emmet-mode treemacs-icons-dired treemacs-projectile treemacs-evil autopair dashboard soft-stone-theme material-theme birds-of-paradise-plus-theme ubuntu-theme zenburn-theme solarized-theme spacemacs-theme counsel rjsx-mode js2-mode auto-complete helm-projectile tide popwin company web-mode yasnippet magit ivy treemacs neotree evil monokai-theme dracula-theme helm disable-mouse))
  '(pdf-view-midnight-colors '("#b2b2b2" . "#292b2e"))
  '(pos-tip-background-color "#2a2a2a")
  '(pos-tip-foreground-color "#939393")
