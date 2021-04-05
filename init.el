@@ -88,6 +88,9 @@
 ;; ------ helm ------
 (require 'init-helm)
 
+;; ------ 代码折叠 hs-minor-mode ------
+(require 'init-hs-mode)
+
 ;; ------ 函数跳转 ------
 (require 'init-jump)
 
