@@ -8,7 +8,7 @@
 
 ;; 设置屏幕宽高
 (set-frame-height (selected-frame) 60)
-(set-frame-width (selected-frame) 130)
+(set-frame-width (selected-frame) 160)
 ;; 屏幕的位置
 (set-frame-position (selected-frame) 500 0)
 

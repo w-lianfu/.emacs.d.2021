@@ -6,45 +6,32 @@
 
 ;; ------ 设置缩进 ------
 
-(setq-default
-  tab-width 2
-  ;; js2-mode
-  ;; js2-basic-offset 2
-  js-indent-level 2
-  ;; web-mode
-  css-indent-offset 2
-  web-mode-markup-indent-offset 2
-  web-mode-css-indent-offset 2
-  web-mode-code-indent-offset 2
-  web-mode-attr-indent-offset 2
-  ts-indent-offset 2
-  tsx-indent-offset 2
-  js-indent-offset 2
-  jsx-indent-offset 2
-  typescript-indent-offset 2
-  javascript-indent-offset 2
-	rust-indent-offset 2)
-
-
-;; ------ 旧的尝试-备份 ------
-
-;;(setq-default indent-tabs-mode nil)
-;;(setq-default tab-width 2)
-;;(setq default-tab-width 2)
-;; make return key also do indent, globally
-;; (electric-indent-mode -1)
-;;(setq c-basic-offset 2)
-;;(setq web-mode-markup-indent-offset 2)
-;;(setq web-mode-code-indent-offset 2)
-;;(setq web-mode-css-indent-offset 2)
-;;(setq css-indent-offset 2)
-;;(setq javascript-indent-level 2)
-;;(setq js-indent-level 2)
-;;(setq typescript-indent-level 2)
-;;(setq ts-indent-level 2)
-;;(setq tsx-indent-offset 2)
-;;(setq rust-indent-unit 2)
-;;(setq rust-indent-offset 2)
+(setq-default indent-tabs-mode nil)
+(electric-indent-mode -1)
+(setq-default tab-width nil)
+(setq-default web-mode-code-indent-offset 2)
+(setq-default web-mode-css-indent-offset 2)
+(setq-default web-mode-markup-indent-offset 2)
+(setq-default web-mode-indent-style 2)
+(setq-default css-indent-offset 2)
+(setq-default sass-indent-offset 2)
+(setq-default js-indent-level 2)
+(setq-default js-curly-indent-offset 2)
+(setq-default js-expr-indent-offset 2)
+(setq-default js-paren-indent-offset 2)
+(setq-default js-square-indent-offset 2)
+(setq-default js-switch-indent-offset 2)
+(setq-default js2-indent-hook 2)
+(setq-default typescript-indent-level 2)
+(setq-default typescript-expr-indent-offset 2)
+(setq-default rjsx--indent-running-offset 2)
+(setq-default rust-indent-offset 2)
+(setq-default ruby-indent-level 2)
+(setq-default ruby-indent-tabs-mode 2)
+(setq-default indent-tabs-mode 2)
+(setq-default indent-region-function 2)
+(setq-default indent-line-function 2)
+(setq-default indent-rigidly-map 2)
 
 
 (provide 'init-indent)
