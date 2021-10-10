@@ -6,7 +6,7 @@
 
 ;; ------ 官方源 ------
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-			 ("melpa" . "https://melpa.org/packages/")))
+	("melpa" . "https://melpa.org/packages/")))
 
 ;; ------ Emacs China 源 ------
 ;;(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
@@ -31,8 +31,10 @@
 
 (setq byte-compile-warnings '(cl-functions))
 
+;; (setq byte-compile-warnings '(cl-functions))
+
 ;; ------ 解决 Emacs GC 占用内存高的问题 ------
-(require 'init-gc)
+;; (require 'init-gc)
 
 ;; ------ 设置默认屏幕宽高 ------
 (require 'init-size)
@@ -41,7 +43,7 @@
 (require 'init-cursor)
 
 ;; ------ Dashboard ------
-(require 'init-dashboard)
+;; (require 'init-dashboard)
 
 ;; ------ 基本配置 ------
 (require 'init-basic)

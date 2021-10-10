@@ -14,8 +14,8 @@
 
 ;; ------ Dired Mode 下不同文件格式高亮 不生效 ------
 (add-hook 'dired-mode-hook
-          (lambda ()
-            (highlight-lines-matching-regexp "\.js" 'hi-yellow)))
+  (lambda ()
+    (highlight-lines-matching-regexp "\.js" 'hi-yellow)))
 ;; ------ Dired Mode 下不同文件格式高亮 不生效 ------
 
 
